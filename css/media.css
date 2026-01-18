@@ -1,0 +1,210 @@
+@import url(./style.css);
+
+/* RESPONSIVE MEDIA */
+/* HEADER MEDIA START */
+@media (max-width: 600px){
+    .header{
+        background: #123;
+    }
+    .header .burger{
+        display: block;
+    }
+    .burger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .burger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .burger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .header .list__menu{
+        position: fixed;
+        top: 6.6rem;
+        right: -100%;
+        gap: 0;
+        padding: 4rem;
+        height: 100vh;
+        width: 16rem;
+        /* width: 100%; */
+        flex-direction: column;
+        text-align: center;
+        background: #123;
+        transition: .3s;
+    }
+    .nav__menu .list__menu{
+        gap: 4rem;
+    }
+    .list__menu.active{
+        right: 0;
+    }
+    .list__link{
+        margin: 2.5rem 0;
+        color: var(--color0);
+    }
+    .header .list__menu a:hover{
+        color: var(--color0);
+        border-color: var(--color0);
+    }
+
+    .reviews h2, .reviews p{
+        color: #123;
+    }
+}
+/* HEADER MEDIA END */
+
+/* 1200PX DOWN */
+@media(max-width: 1150px){
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* 600PX DOWN */
+@media (max-width: 580px) {
+    /* ABOUT MEDIA START */
+    .about__section{
+        flex-direction: column;
+        gap: 5rem;
+        padding: 4rem 6%;
+    }
+    .about__section img{
+        width: 100%;
+        height: auto;
+    }
+
+    .copy .right p{
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+    /* ABOUT MEDIA END */
+
+    /* projects MEDIA START */
+    .projects{
+        padding: 4rem 6%;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .cards .btn__div a{
+        font-size: 1.2rem;
+    }
+    /* projects MEDIA END */
+}
+
+@media (max-width: 400px) {
+    /* REVIEWS MEDIA START */
+    .review-card .info{
+        flex-direction: column;
+    }
+    /* REVIEWS MEDIA END */
+}
+
+@media (max-width: 456px) {
+    /* projects MEDIA START */
+    .cards .btn__div{
+        flex-direction: column;
+    /* projects MEDIA END */
+    }
+
+    /* CONTACT MEDIA START */
+    .contact{
+        padding: 4rem 6%;
+    }
+    .contact__form input, .contact__form textarea{
+        width: 30rem;
+    }
+    /* CONTACT MEDIA END */
+}
+
+@media (max-width: 369px) {
+    /* FOOTER MEDIA START */
+    .footer p{
+        font-size: 1.2rem;
+    }
+    /* FOOTER MEDIA END */
+}
+
+/* 1100PX DOWN */
+@media (max-width: 1100px) {
+    /* ABOUT MEDIA START */
+    .about__section{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .about__section .socials{
+        text-align: center;
+    }
+    .about__section img{
+        width: 250px;
+        height: auto;
+    }
+    .right img{
+        height: 25rem !important;
+    }
+    /* ABOUT MEDIA END */
+
+    /* projects MEDIA START */
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* projects MEDIA END */
+
+    /* CONTACT MEDIA START */
+    .contact .contact__form{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    /* CONTACT MEDIA END */
+}
+
+/* 1300PX UP */
+@media (min-width: 1300px) {
+    /* ABOUT MEDIA START */
+    .about__section h2{
+        font-size: 3.5rem;
+    }
+    .about__section .text{
+        font-size: 1.8rem;
+    }
+    .about__section a{
+        font-size: 1.6rem;
+    }
+    /* ABOUT MEDIA END */
+
+    /* projects MEDIA START */
+    .projects h2{
+        font-size: 3.5rem;
+    }
+    .projects .text__div h3{
+        font-size: 2.5rem;
+    }
+    .projects .cards .card p{
+        font-size: 1.5rem;
+    }
+    /* projects MEDIA END */
+    
+}
+
+/* CARDS MEDIA */
+@media (min-width: 700px) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* TEMPLATES MEDIA */
+/* Show on mobile */
+@media (max-width: 850px) {
+  .choose-category {
+    display: none;
+  }
+  .custom-dropdown-mobile {
+    display: block;
+  }
+  .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

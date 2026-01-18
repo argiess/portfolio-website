@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website | Argie Piamonte</title>
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+
+    <!-- ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="./js/script.js" defer></script>
+    <script src="./js/category-filter.js" defer></script>
+</head>
+<body class="body">
+    <!-- HEADER START -->
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./imgs/logo.png" alt=""></a>
+        </div>
+
+        <nav class="nav__menu">
+            <ul class="list__menu">
+                <li class="list__item"><a href="#about" class="list__link">About</a></li>
+                <li class="list__item"><a href="#services" class="list__link">Services</a></li>
+                <li class="list__item"><a href="#portfolio" class="list__link">Portfolio</a></li>
+                <li class="list__item"><a href="#contact" class="cta list__link">Contact</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+
+
+    <!-- ABOUT SECTION START -->
+    <section class="about__section" id="about">
+        <div class="left">
+            <p>Computer Science Student | OJT Trainee</p>
+            <h2>I am Argie Piamonte</h2>
+             <p class="text">I am a Computer Science student currently taking my On-the-Job Training (OJT). I am eager to learn and gain real-world experience in the tech industry. I enjoy creating systems, exploring new technologies, and improving my skills through practice and hands-on projects.</p>
+
+             <p class="text">My goal during OJT is to strengthen my technical skills, understand real development workflows, and gain experience working on actual systems. I am motivated to learn from professionals and apply what I have studied in a real working environment.</p><br><br>
+             
+             <a href="#contact" class="cta">Contact Me</a><br><br><br><br><br>
+
+            <div class="socials">
+                <a href="https://www.facebook.com/argie.piamonte.35" target="_blank"><i class="ri-facebook-line fb"></i></a>
+                <a href="https://github.com/argiess" target="_blank"><i class="ri-github-fill"></i></a>
+                <a href="https://x.com/ArgiePiamonte" target="_blank"><i class="ri-twitter-x-line"></i></a>  
+                <a href="https://www.linkedin.com/in/argie-piamonte-06aba71b9/" target="_blank"><i class="ri-linkedin-box-fill linkedin"></i></a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="./imgs/logo.png" alt="my picture" class="default">
+            <!-- <img src="./imgs/logo-me.png" alt="my picture hover" class="hover"> -->
+            <a href="./CV-Resume.pdf" class="cv" download>Download CV</a>
+        </div>
+    </section>
+    <!-- ABOUT SECTION END -->
+
+
+    <!-- ABOUT2 SECTION START -->
+    <section class="copy">
+        <div class="left">
+            <img src="./imgs/email-img.jpg" alt="">
+        </div>
+
+        <div class="right">
+            <h1>Skills & Experience</h1><br>
+
+            <p>As a Computer Science student, I have built a solid foundation in programming, problem-solving, and system development. I have experience working with languages such as Python, PHP, and JavaScript, and I am familiar with database management, version control, and basic web development. I enjoy applying my knowledge through hands-on projects, from designing small applications to experimenting with automation and digital tools. I am particularly interested in exploring technologies that help businesses grow, such as email marketing systems, where I can see the connection between technical solutions and real-world impact. My skills include logical thinking, debugging, and learning new technologies quickly, which allows me to adapt and tackle challenges effectively. I am motivated to continue developing my technical abilities and understanding how software solutions are applied in practical scenarios.</p><br>
+        </div>
+    </section>
+    <!-- ABOUT2 SECTION END -->
+
+
+    <!-- PROJECTS START -->
+    <section class="projects" id="projects">
+        <div class="center">
+            <h2>Projects</h2>
+            <!-- <p>Design + Copy that Deliver Results</p> -->
+            <p>A project designed to turn ideas into a working solution.</p>
+        </div>
+        
+        <!-- <div class="choose-category" id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">Show all</button>
+            <button class="btn" onclick="filterSelection('welcome')">Welcome emails</button>
+            <button class="btn" onclick="filterSelection('promotional')">Promotional campaigns</button>
+        </div> -->
+
+        <!-- Mobile Dropdown Filter -->
+        <!-- <div class="custom-dropdown-mobile">
+            <div class="dropdown-selected" onclick="toggleDropdown()">
+                <span><i class="icon"><span style="color: #69a8f1;">&lt;/&gt;</span></i> Show all</span>
+                <i class="arrow">▾</i>
+            </div>
+            <div class="dropdown-options">
+                <div onclick="selectCategory('all', this)"><i class="icon"><span style="color: #69a8f1;">&lt;/&gt;</span></i> Show all</div>
+                <div class="category-btn" onclick="selectCategory('welcome', this)">Welcome emails</div>
+                <div class="category-btn" onclick="selectCategory('promotional', this)">Promotional campaigns</div>
+            </div>
+        </div> -->
+
+        <!-- WEBSITE TEMPLATE CARD -->
+        <div class="cards container">
+            <!--  -->
+            <div class="card content welcome"</div>
+                <div class="img">
+                    <img src="./imgs/projects/p1.png" alt="z-mail homepage">
+                </div>
+
+                <div class="btn__div">
+                    <a href="https://argiess.github.io/z-mail/" target="_blank">Live Preview</a>
+                    <a href="https://github.com/argiess/z-mail" target="_blank">View Github</a>
+                </div>
+            </div>
+            <!--  -->
+
+            <!--  -->
+            <div class="card content welcome"</div>
+                <div class="img">
+                    <img src="./imgs/projects/p2.png" alt="alumni portal homepage">
+                </div>
+
+                <div class="btn__div">
+                    <a href="https://github.com/argiess/alumni-portal" target="_blank">View Github</a>
+                </div>
+            </div>
+            <!--  -->
+
+        </div>
+    </section>
+    <!-- PROJECTS END -->
+
+
+    <!-- CONTACT START -->
+    <section class="contact" id="contact">
+        <div class="center">
+            <h2>Contact me</h2>
+            <p>Open to conversations, ideas, and opportunities. Feel free to get in touch..</p>
+        </div>
+
+        <div class="contact__form">
+            <div class="left">
+                <form action="https://formspree.io/f/mpzvolve" method="post">
+                    <label for="name">Full name<span class="highlight">*</span></label><br>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" autocomplete="off" required><br>
+
+                    <label for="email">Email<span class="highlight">*</span></label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off" required><br>
+
+                    <label for="number">Phone number</label><br>
+                    <input type="tel" name="number" id="number" placeholder="Enter your number" maxlength="11" autocomplete="off"><br>
+
+                    <label for="msg">Send me a message<span class="highlight">*</span></label><br>
+                    <textarea name="message" id="msg" placeholder="Let's talk.." required></textarea><br>
+                    <button type="submit">Send message <i class="ri-send-plane-fill"></i></button>
+                </form>
+            </div>
+
+            <div class="right">
+                <div class="div margin-b">
+                    <h3><i class="ri-webhook-line"></i> Reliable and Detail-Oriented.</h3>
+                    <p>I build projects with care, focusing on clean design, structured code, and practical functionality. I aim to deliver work that is reliable and continuously improving.</p>
+                </div>
+                <div class="div margin-b">
+                    <h3><i class="ri-timer-flash-line"></i> Learning-Focused, Results-Driven.</h3>
+                    <p>I approach each project as an opportunity to learn and improve while ensuring tasks are completed properly and on time.</p>
+                </div>
+                <div class="div">
+                    <h3><i class="ri-guide-line"></i> Focused on Practical Solutions.</h3>
+                    <p>Each project is approached with usability and performance in mind, helping turn ideas into functional systems that support real needs and goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT END -->
+
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <p>Copyright &copy; 2025 <span class="highlight">Argie Piamonte</span> | All Rights Reserved.</p>
+    </footer>
+    <!-- FOOTER END -->
+</body>
+</html>
